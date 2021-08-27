@@ -7,9 +7,8 @@ CC=/home/fanning/workspace/f1c100s/licheepi_nano_sdk/buildroot-2021.02.3/buildro
 #CC=/home/fanning/workspace/f1c100s/licheepi_nano_sdk/toolchain/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-gcc
 
 CFLAGS += -I.
-CFLAGS += -I/home/fanning/workspace/f1c100s/licheepi_nano_sdk/rootfs/lib/fagpio
 
-LDFLAGS	+= -L/home/fanning/workspace/f1c100s/licheepi_nano_sdk/rootfs/lib/fagpio
+LDFLAGS	+= -L.
 
 OBJ = $(OBJ_DIR)/blink.o
 
@@ -19,7 +18,7 @@ LDLIBS	+= $(LIBS) \
 		-lrt			\
 		-lm 			\
 		-lfagpio		\
-		-Xlinker -rpath=/home/fanning/workspace/f1c100s/licheepi_nano_sdk/rootfs/lib/fagpio	\
+		-Xlinker -rpath=.	\
 
 IP_ADDR = 192.168.1.100
 all: create $(OBJ_DIR)/$(NAME_MODULE)
