@@ -1,0 +1,19 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/home/fanning/workspace/f1c100s/licheepi_nano_sdk/buildroot-2021.02.3/buildroot-2021.02.3/output/host
+exec_prefix=/home/fanning/workspace/f1c100s/licheepi_nano_sdk/buildroot-2021.02.3/buildroot-2021.02.3/output/host
+libdir=/home/fanning/workspace/f1c100s/licheepi_nano_sdk/buildroot-2021.02.3/buildroot-2021.02.3/output/host/lib
+includedir=/home/fanning/workspace/f1c100s/licheepi_nano_sdk/buildroot-2021.02.3/buildroot-2021.02.3/output/host/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://tukaani.org/xz/
+Version: 5.2.5
+Cflags: -I${includedir}
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread

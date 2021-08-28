@@ -1,0 +1,13 @@
+prefix=/home/fanning/workspace/f1c100s/licheepi_nano_sdk/buildroot-2021.02.3/buildroot-2021.02.3/output/host
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+sharedlibdir=${libdir}
+includedir=${prefix}/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

@@ -1,0 +1,14 @@
+#   LZ4 - Fast LZ compression algorithm
+#   Copyright (C) 2011-2014, Yann Collet.
+#   BSD 2-Clause License (http://www.opensource.org/licenses/bsd-license.php)
+
+prefix=/home/fanning/workspace/f1c100s/licheepi_nano_sdk/buildroot-2021.02.3/buildroot-2021.02.3/output/host
+libdir=/home/fanning/workspace/f1c100s/licheepi_nano_sdk/buildroot-2021.02.3/buildroot-2021.02.3/output/host/lib
+includedir=/home/fanning/workspace/f1c100s/licheepi_nano_sdk/buildroot-2021.02.3/buildroot-2021.02.3/output/host/include
+
+Name: lz4
+Description: extremely fast lossless compression algorithm library
+URL: http://www.lz4.org/
+Version: 1.9.3
+Libs: -L/home/fanning/workspace/f1c100s/licheepi_nano_sdk/buildroot-2021.02.3/buildroot-2021.02.3/output/host/lib -llz4
+Cflags: -I/home/fanning/workspace/f1c100s/licheepi_nano_sdk/buildroot-2021.02.3/buildroot-2021.02.3/output/host/include

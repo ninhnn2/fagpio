@@ -1,7 +1,7 @@
 NAME_MODULE = fagpio
 OBJ_DIR = build_$(NAME_MODULE)
-CXX=/home/fanning/workspace/f1c100s/licheepi_nano_sdk/buildroot-2021.02.3/buildroot-2021.02.3/output/host/bin/arm-buildroot-linux-gnueabi-g++
-CC=/home/fanning/workspace/f1c100s/licheepi_nano_sdk/buildroot-2021.02.3/buildroot-2021.02.3/output/host/bin/arm-buildroot-linux-gnueabi-gcc
+CXX=./f1c100s_compiler/bin/arm-buildroot-linux-gnueabi-g++
+CC=./f1c100s_compiler/bin/arm-buildroot-linux-gnueabi-gcc
 
 CFLAGS = -I.
 OBJ = $(OBJ_DIR)/fagpio.o
