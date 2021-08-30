@@ -41,4 +41,4 @@ lib:
 
 .PHONY: copy
 copy:
-	sshpass -p "000" scp -r ./$(OBJ_DIR)/$(NAME_MODULE) root@$(IP_ADDR):/rom/
+	sshpass -p "000" scp -r ./$(OBJ_DIR)/$(NAME_MODULE) root@$(IP_ADDR):/rom/work

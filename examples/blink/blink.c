@@ -5,23 +5,23 @@ int main(void) {
 
 	fagpio_setup();
 
-	pinMode(4, 1);
-	pinMode(5, 1);
-	pinMode(6, 1);
-	pinMode(7, 1);
+	pinMode(3, 0);
+	pinMode(4, 0);
+	pinMode(5, 0);
 
 	while(1) {
 
+		digitalWrite(3, 1);
 		digitalWrite(4, 1);
 		digitalWrite(5, 1);
-		digitalWrite(6, 1);
-		digitalWrite(7, 1);
-		usleep(500);
+
+		usleep(118);
+
+		digitalWrite(3, 0);
 		digitalWrite(4, 0);
 		digitalWrite(5, 0);
-		digitalWrite(6, 0);
-		digitalWrite(7, 0);
-		usleep(500);
+
+		usleep(118);
 	}
 
 	fagpio_free();

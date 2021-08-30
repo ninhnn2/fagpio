@@ -50,7 +50,6 @@ BIT
 32                                            0
   PE7   PE6   PE5   PE4   PE3   PE2   PE1   PE0
 0 000 0 000 0 000 0 000 0 000 0 000 0 000 0 000
-
 */
 
 int fagpio_setup(void) {
