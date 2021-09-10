@@ -13,7 +13,7 @@
 - make -j8
 
 ### copy library to blink example
-- cp libfagpio.so examples/blink/
+- cp libfagpio.so fagpio.h examples/blink/
 
 ### compile blink exmaple
 - make -j8
